@@ -1,15 +1,8 @@
-// src/App.js
-import React from "react";
-import { Card } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Name from "./Name";
-import Price from "./Price";
-import Description from "./Description";
-import Image from "./Image";
-import product from "./product";
-
-const firstName = "YourFirstName"; // Replace with your actual first name
-
+import Description from "./components/Description";
+import Image from "./components/Image";
+import Name from "./components/Name";
+import Price from "./components/Price";
+import product from "./components/product";
 const App = () => {
 	return (
 		<div className="container mt-4">

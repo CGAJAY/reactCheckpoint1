@@ -1,12 +1,12 @@
 // src/Image.js
-import React from "react";
-import product from "./product";
+// import React from "react";
+import products from "./product";
 
 const Image = () => {
 	return (
 		<img
-			src={product.image}
-			alt={product.name}
+			src={products.image}
+			alt={products.name}
 			className="img-fluid"
 		/>
 	);
