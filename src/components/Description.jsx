@@ -1,11 +1,10 @@
 // src/Description.js
 // import React from "react";
-import products from "./product";
+// import products from "../Product";
 
-const Description = () => {
-	return (
-		<p className="card-text">{products.description}</p>
-	);
+const Description = ({ product }) => {
+	const { description } = product;
+	return <span className="card-text">{description}</span>;
 };
 
 export default Description;
