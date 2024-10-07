@@ -1,28 +1,27 @@
 import { Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Description from "./components/Description";
-import Image from "./components/Image";
-import Name from "./components/Name";
-import Price from "./components/Price";
 import product from "./Product.json";
-
+import Name from "./components/Name.jsx";
+import Description from "./components/Description.jsx";
+import Image from "./components/Image.jsx";
+import Price from "./components/Price.jsx";
 const App = () => {
-	console.log(product);
+	const { description, name, price, image } = product;
 
 	return (
 		<div className="container mt-4">
 			<Card className="text-center">
 				<Card.Body>
 					<Card.Title>
-						<Name product={product} />
+						<Name name={name} />
 					</Card.Title>
 					<Card.Subtitle className="mb-2 text-muted">
-						<Price product={product} />
+						<Price price={price} />
 					</Card.Subtitle>
 					<Card.Text>
-						<Description product={product} />
+						<Description description={description} />
 					</Card.Text>
-					<Image product={product} />
+					<Image image={image} name={name} />
 				</Card.Body>
 			</Card>
 		</div>

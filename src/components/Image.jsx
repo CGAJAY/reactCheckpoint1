@@ -1,12 +1,15 @@
-// src/Image.js
-// import React from "react";
-// import products from "./product";
+import PropTypes from "prop-types";
 
-const Image = ({ product }) => {
-	const { name, image } = product;
+const Image = ({ image, name }) => {
 	return (
 		<img src={image} alt={name} className="img-fluid" />
 	);
+};
+
+// Define prop types for the Image component
+Image.propTypes = {
+	image: PropTypes.string.isRequired, // 'image' must be a string and required
+	name: PropTypes.string.isRequired, // 'name' must be a string and required
 };
 
 export default Image;
